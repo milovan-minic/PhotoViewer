@@ -29,6 +29,16 @@ class ViewController: UITableViewController {
         }
         
     }
+    
+    /// Function shows how many rows should be visible
+    ///
+    /// - Parameters:
+    ///   - tableView: tableView
+    ///   - section: section
+    /// - Returns: number of rows to appear
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return pictures.count
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
