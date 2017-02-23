@@ -30,7 +30,7 @@ class ViewController: UITableViewController {
         
     }
     
-    /// Function shows how many rows should be visible
+    /// Method shows how many rows should be visible
     ///
     /// - Parameters:
     ///   - tableView: tableView
@@ -38,6 +38,18 @@ class ViewController: UITableViewController {
     /// - Returns: number of rows to appear
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return pictures.count
+    }
+    
+    /// Method shows name of picture fie to be shown in each cell
+    ///
+    /// - Parameters:
+    ///   - tableView: tableView
+    ///   - indexPath: indexPath
+    /// - Returns: name of picture file
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Picture", for: indexPath)
+        cell.textLabel?.text = pictures[indexPath.row]
+        return cell
     }
 
     override func didReceiveMemoryWarning() {
