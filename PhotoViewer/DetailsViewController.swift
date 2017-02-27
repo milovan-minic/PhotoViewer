@@ -22,6 +22,22 @@ class DetailsViewController: UIViewController {
             imageView.image = UIImage(named: imageToLoad)
         }
     }
+    
+    /// Hides navigation bar when tapped
+    ///
+    /// - Parameter animated: animated
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.hidesBarsOnTap = true
+    }
+    
+    /// Shows navigation bar when tapped
+    ///
+    /// - Parameter animated: animated
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.hidesBarsOnTap = false
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
