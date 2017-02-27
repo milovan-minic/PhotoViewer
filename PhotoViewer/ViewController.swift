@@ -51,6 +51,22 @@ class ViewController: UITableViewController {
         cell.textLabel?.text = pictures[indexPath.row]
         return cell
     }
+    
+    /// Method instantiates DetailsViewController once image is selected
+    ///
+    /// - Parameters:
+    ///   - tableView: tableViev
+    ///   - indexPath: indexPath
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        // 1. Try loading the "Details" view controller and typecasting it to DetailsViewController
+        if let vc = storyboard?.instantiateViewController(withIdentifier: "Details") as? DetailsViewController {
+            // 2. Success! Set it's selectedImage property
+            vc.selectedImage = pictures[indexPath.row]
+            
+            // 3. Now push it to the navigation controller
+            navigationController?.pushViewController(vc, animated: true)
+        }
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

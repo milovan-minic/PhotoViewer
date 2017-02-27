@@ -12,6 +12,9 @@ class DetailsViewController: UIViewController {
 
     @IBOutlet weak var imageView: UIImageView!
     
+    /// Holds name of the image that is to be loaded
+    var selectedImage: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
