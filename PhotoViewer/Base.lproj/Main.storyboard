@@ -51,7 +51,7 @@
         <scene sceneID="79U-of-ZsG">
             <objects>
                 <viewController storyboardIdentifier="Details" id="Hzr-6C-Zek" customClass="DetailsViewController" customModule="PhotoViewer" customModuleProvider="target" sceneMemberID="viewController">
-                    <imageView key="view" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="6Cd-NW-ZmC">
+                    <imageView key="view" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="6Cd-NW-ZmC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     </imageView>
