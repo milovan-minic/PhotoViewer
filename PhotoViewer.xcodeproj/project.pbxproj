@@ -22,7 +22,7 @@
 		DC255DAB1E5E1691007AD992 /* nssl0049.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DC255DA11E5E1691007AD992 /* nssl0049.jpg */; };
 		DC255DAC1E5E1691007AD992 /* nssl0051.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DC255DA21E5E1691007AD992 /* nssl0051.jpg */; };
 		DC255DAD1E5E1691007AD992 /* nssl0091.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DC255DA31E5E1691007AD992 /* nssl0091.jpg */; };
-		DC255DAF1E602A7C007AD992 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC255DAE1E602A7C007AD992 /* DetailsViewController.swift */; };
+		DC255DB11E643529007AD992 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC255DB01E643529007AD992 /* DetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,7 +43,7 @@
 		DC255DA11E5E1691007AD992 /* nssl0049.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nssl0049.jpg; sourceTree = "<group>"; };
 		DC255DA21E5E1691007AD992 /* nssl0051.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nssl0051.jpg; sourceTree = "<group>"; };
 		DC255DA31E5E1691007AD992 /* nssl0091.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = nssl0091.jpg; sourceTree = "<group>"; };
-		DC255DAE1E602A7C007AD992 /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		DC255DB01E643529007AD992 /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +79,7 @@
 				DC255D871E5E123E007AD992 /* AppDelegate.swift */,
 				DC255D891E5E123E007AD992 /* ViewController.swift */,
 				DC255D8B1E5E123E007AD992 /* Main.storyboard */,
-				DC255DAE1E602A7C007AD992 /* DetailsViewController.swift */,
+				DC255DB01E643529007AD992 /* DetailsViewController.swift */,
 				DC255D8E1E5E123E007AD992 /* Assets.xcassets */,
 				DC255D901E5E123E007AD992 /* LaunchScreen.storyboard */,
 				DC255D931E5E123E007AD992 /* Info.plist */,
@@ -189,7 +189,7 @@
 			files = (
 				DC255D8A1E5E123E007AD992 /* ViewController.swift in Sources */,
 				DC255D881E5E123E007AD992 /* AppDelegate.swift in Sources */,
-				DC255DAF1E602A7C007AD992 /* DetailsViewController.swift in Sources */,
+				DC255DB11E643529007AD992 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,6 +351,7 @@
 				DC255D981E5E123E007AD992 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

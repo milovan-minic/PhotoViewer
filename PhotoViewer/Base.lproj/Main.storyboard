@@ -47,30 +47,17 @@
             </objects>
             <point key="canvasLocation" x="1004" y="139.880059970015"/>
         </scene>
-        <!--View Controller-->
+        <!--Details View Controller-->
         <scene sceneID="79U-of-ZsG">
             <objects>
-                <viewController storyboardIdentifier="Details" id="Hzr-6C-Zek" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="A5c-aW-1rS"/>
-                        <viewControllerLayoutGuide type="bottom" id="mvO-wP-b4B"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="BNy-TY-WKm" customClass="DetailsViewController" customModule="PhotoViewer" customModuleProvider="target">
+                <viewController storyboardIdentifier="Details" id="Hzr-6C-Zek" customClass="DetailsViewController" customModule="PhotoViewer" customModuleProvider="target" sceneMemberID="viewController">
+                    <imageView key="view" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="6Cd-NW-ZmC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="udU-C4-N4I">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="udU-C4-N4I" firstAttribute="top" secondItem="BNy-TY-WKm" secondAttribute="top" id="4wc-b1-S15"/>
-                            <constraint firstAttribute="trailing" secondItem="udU-C4-N4I" secondAttribute="trailing" id="EIc-GC-8Q3"/>
-                            <constraint firstItem="mvO-wP-b4B" firstAttribute="top" secondItem="udU-C4-N4I" secondAttribute="bottom" id="dMO-Dt-5Zi"/>
-                            <constraint firstItem="udU-C4-N4I" firstAttribute="leading" secondItem="BNy-TY-WKm" secondAttribute="leading" id="yOK-Y1-cFE"/>
-                        </constraints>
-                    </view>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    </imageView>
+                    <connections>
+                        <outlet property="imageView" destination="6Cd-NW-ZmC" id="q76-3C-nKj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uog-Oq-bEY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
